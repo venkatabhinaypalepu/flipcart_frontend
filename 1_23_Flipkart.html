@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .product-container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .product {
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+            gap: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .product:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+
+        img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+        }
+
+        .rating {
+            background-color: green;
+            color: bisque;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 1.3rem;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .price {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        .old-price {
+            font-size: 1.1rem;
+            text-decoration: line-through;
+        }
+
+        .discount {
+            color: green;
+            font-size: 1rem;
+        }
+
+        li {
+            margin-left: -20px;
+            margin-bottom: 5px;
+        }
+
+        .features ul {
+            padding-left: 20px;
+        }
+
+        .price-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .flipkart-assured {
+            margin-left: 10px;
+            width: 70px;
+            height: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            .product {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .product img {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-container">
+
+    
+        <div class="product">
+            <div>
+                <img src="Iqoo2.png" alt="IQOO Z3 5G">
+            </div>
+            <div>
+                <div>
+                    <span class="bi bi-heart-fill"></span>
+                    <span class="title">IQOO Z3 5G (Ace Black, 128 GB) (6 GB RAM)</span>
+                </div>
+                <br>
+                <div>
+                    <span class="rating">4.3 <span class="bi bi-star-fill"></span></span>
+                    <span>&nbsp;3,018 Ratings & 114 Reviews</span>
+                </div>
+                <div class="features">
+                    <ul>
+                        <li>6 GB RAM | 128 GB ROM</li>
+                        <li>16.71 cm (6.58 inch) Display</li>
+                        <li>64MP Rear Camera</li>
+                        <li>4400 mAh Battery</li>
+                        <li>1 Year Warranty</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="price-container">
+                    <div class="price">&#8377;22,990</div>
+                    <img class="flipkart-assured" src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="Flipkart Assured">
+                </div>
+                <div class="old-price">&#8377;26,990</div>
+                <br>
+                <div>Free Delivery</div>
+                <br>
+                <div><b class="discount">Bank Offer</b></div>
+                <div>Upto <b>&#8377;8,000</b> Off on Exchange</div>
+            </div>
+        </div>
+
+    
+        <div class="product">
+            <div>
+                <img src="hp_laptop.png" alt="HP Laptop">
+            </div>
+            <div>
+                <div>
+                    <span class="bi bi-heart-fill"></span>
+                    <span class="title">HP Backlit Intel Core i5 12th Gen 1235U - (8 GB/512 GB SSD/Windows 11 Home) 15s-fy5002TU</span>
+                </div>
+                <br>
+                <div>
+                    <span class="rating">4.2 <span class="bi bi-star-fill"></span></span>
+                    <span>&nbsp;6,566 Ratings & 325 Reviews</span>
+                </div>
+                <div class="features">
+                    <ul>
+                        <li>Intel Core i5 Processor (12th Gen)</li>
+                        <li>8 GB DDR4 RAM</li>
+                        <li>64 bit Windows 11 Operating System</li>
+                        <li>512 GB SSD</li>
+                        <li>39.62 cm (15.6 inch) Display</li>
+                        <li>1 Year Onsite Warranty</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="price-container">
+                    <div class="price">&#8377;43,990</div>
+                    <img class="flipkart-assured" src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="Flipkart Assured">
+                </div>
+                <div class="old-price">&#8377;70,064</div>
+                <br>
+                <div>Free delivery</div>
+                <br>
+                <div><b class="discount">Bank Offer</b></div>
+                <div>Upto <b>&#8377;25,000</b> Off on Exchange</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
